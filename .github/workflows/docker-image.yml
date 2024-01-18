@@ -37,7 +37,7 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker build -t ander1221/docker-graphql:$NEW_VERSION.
+        docker build -t ander1221/docker-graphql:$NEW_VERSION .
         docker build -t ander1221/docker-graphql .
 
     - name: Push Docker Image
